@@ -1,10 +1,9 @@
-p = 1000
-r = 5
-t = 2
+import sys
 
-si = (p * r * t) / 100
+principal = float(sys.argv[1])
+rate = float(sys.argv[2])
+time = float(sys.argv[3])
 
-print("Principal Amount:", p)
-print("Rate of Interest:", r)
-print("Time:", t)
-print("Simple Interest:", si)
+simple_interest = (principal * rate * time) / 100
+
+print("Simple Interest =", simple_interest)
